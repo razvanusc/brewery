@@ -1,0 +1,29 @@
+.menu {
+  background-color: #002642;
+  text-align: center;
+  position: fixed;
+  padding: 20px;
+  width: 100%;
+  z-index: 1;
+}
+
+.menu-home,
+.menu-categories,
+.menu-random {
+  background: none;
+  color: #F4F7F5;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: inline;
+  margin: 30px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.menu-home:hover,
+.menu-categories:hover,
+.menu-random:hover {
+  color: #bcbcb8;
+  text-decoration: none;
+}
