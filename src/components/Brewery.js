@@ -22,14 +22,12 @@ class Brewery extends React.Component {
 
   render() {
 
-
-
     const { breweries } = this.state;
 
     return(
     <div>
-      <div class="banner" styles="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://bitterminnesotabrewerytours.com/wp-content/uploads/2014/02/boston-beer-tours-glass.jpg');">
-        <div class="banner-content">
+      <div className="banner" styles="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('http://bitterminnesotabrewerytours.com/wp-content/uploads/2014/02/boston-beer-tours-glass.jpg');">
+        <div className="banner-content">
           <h1>Brewery</h1>
           <p>asd</p>
         </div>

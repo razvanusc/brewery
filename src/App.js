@@ -3,6 +3,7 @@ import { BrowserRouter,Route,Switch } from 'react-router-dom';
 import Brewery from './components/Brewery'
 import DetailPage from './components/DetailPage'
 import Menu from './components/Menu'
+import Random from './components/Random'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
           <Switch>
             <Route path="/" component={Brewery} exact/>
             <Route path="/brewery/:id" component={DetailPage} exact/>
+            <Route path="/random" component={Random} exact/>
           </Switch>
         </BrowserRouter>
       </div>
