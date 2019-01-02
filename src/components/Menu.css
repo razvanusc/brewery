@@ -5,25 +5,49 @@
   padding: 20px;
   width: 100%;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu-home,
 .menu-categories,
 .menu-random {
   background: none;
-  color: #F4F7F5;
+  color: #F4F7F5 !important;
   border: none;
-  padding: 0;
   cursor: pointer;
-  display: inline;
-  margin: 30px;
   font-weight: bold;
   font-size: 20px;
+  background-color: #002642 !important;
 }
+
 
 .menu-home:hover,
 .menu-categories:hover,
 .menu-random:hover {
   color: #bcbcb8;
   text-decoration: none;
+}
+
+.cont-home,
+.cont-categories,
+.cont-random {
+  margin-top: 7px;
+  margin-bottom: 7px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.cont-categories {
+  margin-top: -7px;
+}
+
+.cat-dropdown {
+  text-transform: capitalize;
+  color: black !important;
+}
+
+#dropdown-no-caret {
+  margin-top: 15px;
 }

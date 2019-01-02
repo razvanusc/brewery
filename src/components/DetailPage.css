@@ -1,14 +1,7 @@
-/* div {
-  background-color: #EFEFEF;
-  padding-bottom: 101px;
-} */
-
 .background {
   padding-top: 100px;
-}
-
-.empty {
-  padding-top: 0px;
+  background-color: #EFEFEF;
+  min-height: 100vh;
 }
 
 .details {
@@ -27,15 +20,15 @@
   padding-left: 25px;
 }
 
-.recommendations {
-  font-weight: bold;
-  margin-top: 30px;
-  margin-left: 285px;
-  font-size: 25px;
-}
-
 .category {
   text-transform: capitalize;
+}
+
+.recommendations {
+  font-weight: bold;
+  margin-top: 80px;
+  margin-left: 285px;
+  font-size: 25px;
 }
 
 a {
@@ -45,4 +38,39 @@ a {
 a:hover {
   color: #0282fc;
   text-decoration: none;
+}
+
+.card {
+  height: 175px;
+  background-size: cover !important;
+  background-position: center;
+  color: black;
+  position: relative;
+  margin: 25px 0;
+}
+
+.card:hover {
+  opacity: 0.9;
+}
+
+.card-name {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
 }

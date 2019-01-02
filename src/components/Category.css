@@ -1,0 +1,46 @@
+.main-container {
+  background-color: #EFEFEF;
+  padding-top: 90px;
+  min-height: 80vh;
+}
+
+.card {
+  height: 175px;
+  background-size: cover !important;
+  background-position: center;
+  color: black;
+  position: relative;
+  margin: 25px 0;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.card-name {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 15px;
+  text-transform: capitalize;
+}
+
+.card-description {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.card-description h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+}
+.card-description p {
+  font-size: 14px;
+  opacity: 0.7;
+  font-weight: lighter;
+}
+
+.brewery-type {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 30px;
+  text-transform: capitalize;
+}
