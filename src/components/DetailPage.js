@@ -11,21 +11,25 @@ class DetailPage extends React.Component {
     };
   }
 
+  //Method reloads page and takes the page back to the top when one of the recommendations is clicked
   reloadPage(event) {
     window.location.reload()
     window.scrollTo(0, 0)
   }
 
+  //Method fetches API data
   componentDidMount() {
     const { id } = this.props.match.params;
-    fetch(`https://api.openbrewerydb.org/breweries/${id}`)
+    //Fetches only one of the items to show details
+    fetch(global.url +  "/" + id)
       .then(response => response.json())
       .then(data => {
         this.setState({
           brewery: data
         });
       });
-    fetch("https://api.openbrewerydb.org/breweries")
+    //Fetches the whole API again to show recommendations
+    fetch(global.url)
         .then(response => response.json())
         .then((data) => {
           this.setState({
@@ -58,7 +62,7 @@ class DetailPage extends React.Component {
                         <h2>{brewery.brewery_type}</h2>
                         <p>{brewery.city}, {brewery.state}</p>
                       </div>
-                      <div className="card-name"><img src="https://img.icons8.com/color/20/000000/beer.png" alt="beer"/> {brewery.name}</div>
+                      <div className="card-name">{brewery.name}</div>
                     </div>
                   </Link>
                 </div>

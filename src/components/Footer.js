@@ -5,6 +5,7 @@ class Footer extends React.Component {
   render() {
     return(
       <div className="footer">
+        <div className= "ifooter">
         <ul>
           <h2>Our Website</h2>
           <li><a href="/">Home</a></li>
@@ -22,6 +23,7 @@ class Footer extends React.Component {
           <li><a href="#">About Us</a></li>
           <li><a href="#">Contact Us</a></li>
         </ul>
+        </div>
       </div>
     )
   }

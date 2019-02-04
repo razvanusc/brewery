@@ -1,7 +1,7 @@
 .main {
   padding-top: 100px;
   min-height: 80vh;
-  background-color: #F8F9FA;
+  background-color: #ffd9a7;
 }
 
 .details {
@@ -28,13 +28,13 @@
 .btn-random {
   margin-top: 30px;
   border-radius: 10px;
-  background-color: #309aff;
+  background-color: #4286ba;
   color: white;
   padding: 10px;
   font-size: 20px;
 }
 
 .btn-random:hover {
-  background-color: #0282fc;
+  background-color: #325896;
   cursor: pointer;
 }

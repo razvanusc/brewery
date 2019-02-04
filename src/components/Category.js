@@ -12,8 +12,9 @@ class Category extends React.Component {
     }
   }
 
+  //Method fetches API data
   componentDidMount() {
-    fetch("https://api.openbrewerydb.org/breweries")
+    fetch(global.url)
         .then(response => response.json())
         .then((data) => {
           this.setState({
@@ -22,6 +23,7 @@ class Category extends React.Component {
         })
   }
 
+  //Method sorts items alphabetically(A-Z)
   sortAlpha() {
       const breweries = [...this.state.breweries.slice(0,10)].sort((a, b) => {
         if (a.name < b.name) return -1;
@@ -31,6 +33,7 @@ class Category extends React.Component {
       this.setState({ breweries: breweries });
     }
 
+  //Method sorts items alphabetically(Z-A)
   sortRevAlpha() {
     const breweries = [...this.state.breweries.slice(0,10)].sort((a, b) => {
       if (a.name < b.name) return 1;
@@ -69,7 +72,7 @@ class Category extends React.Component {
                     <h2>{brewery.brewery_type}</h2>
                     <p>{brewery.city}, {brewery.state}</p>
                   </div>
-                  <div className="card-name"><img src="https://img.icons8.com/color/20/000000/beer.png" alt="beer"/>  {brewery.name}</div>
+                  <div className="card-name">{brewery.name}</div>
                 </div>
               </Link>
             </div>

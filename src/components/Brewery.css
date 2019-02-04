@@ -1,11 +1,11 @@
 .main-container {
-  background-color: #EFEFEF;
+  background-color: #ffd9a7;
 }
 
 .banner {
   color: white;
   text-align: center;
-  height: 90vh;
+  height: 60vh;
   background-size: cover !important;
   display: flex;
   align-items: center;
@@ -29,32 +29,36 @@
 
 .card {
   height: 175px;
+  width: 320px;
   background-size: cover !important;
   background-position: center;
   color: black;
   position: relative;
   margin: 25px 0;
-}
-
-.card:hover {
-  opacity: 0.9;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .card-name {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
+  margin-top: 10px;
+  top: 20px;
+  left: 20%;
+  right: 20%;
+  font-size: 22px;
   text-transform: capitalize;
+  text-align: center;
 }
+
 .card-description {
   position: absolute;
   bottom: 10px;
   left: 10px;
 }
 .card-description h2 {
-  font-size: 16px;
+  font-size: 18px;
   text-transform: capitalize;
+  font-weight: lighter;
 }
 .card-description p {
   font-size: 14px;

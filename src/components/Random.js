@@ -1,5 +1,6 @@
 import React from "react";
 import './Random.css';
+import './Variables'
 
 
 class Random extends React.Component {
@@ -11,8 +12,9 @@ class Random extends React.Component {
     };
   }
 
+  //Method fetches API data
   componentDidMount() {
-    fetch("https://api.openbrewerydb.org/breweries")
+    fetch(global.url)
       .then(response => response.json())
       .then((data) => {
         this.setState({
@@ -21,6 +23,7 @@ class Random extends React.Component {
       })
   }
 
+  //Method gives new random item when button is clicked
   newRandom() {
     const brewery = this.state.breweries.slice(0, 10)[Math.floor(Math.random()*this.state.breweries.length)];
     this.setState({brewery:brewery});

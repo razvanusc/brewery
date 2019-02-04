@@ -40,6 +40,8 @@ class Menu extends React.Component {
 
     return(
       <div className="menu">
+      <div className="pint"><a href="/"><img src={require("../pint.png")} alt="Pint" height="50" width="50"/></a></div>
+      <div className="menu-btns">
         <div className="cont-home"><a href={`/`} className="menu-home">Home</a></div>
         <div className="cont-categories">
           <ButtonToolbar>
@@ -55,6 +57,7 @@ class Menu extends React.Component {
           </ButtonToolbar>
         </div>
         <div className="cont-random"><a href={`/random`} className="menu-random">Random</a></div>
+      </div>
       </div>
     )
   }

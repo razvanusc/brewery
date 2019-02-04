@@ -1,10 +1,17 @@
 .menu {
-  background-color: #002642;
+  background-color: #f2f5ff;
   text-align: center;
   position: fixed;
   padding: 20px;
   width: 100%;
   z-index: 1;
+  box-shadow: 0 4px 25px -8px gray;
+  display: flex;
+  align-items: center;
+}
+
+.menu-btns {
+  margin-left: 590px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -14,19 +21,19 @@
 .menu-categories,
 .menu-random {
   background: none;
-  color: #F4F7F5 !important;
+  color: #4286ba !important;
   border: none;
   cursor: pointer;
   font-weight: bold;
-  font-size: 20px;
-  background-color: #002642 !important;
+  font-size: 22px;
+  background-color: #f2f5ff !important;
 }
 
 
 .menu-home:hover,
 .menu-categories:hover,
 .menu-random:hover {
-  color: #bcbcb8;
+  color: #325896 !important;
   text-decoration: none;
 }
 
@@ -42,6 +49,11 @@
 .cont-categories {
   margin-top: -7px;
 }
+
+.pint {
+  color: white;
+}
+
 
 .cat-dropdown {
   text-transform: capitalize;

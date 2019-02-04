@@ -1,11 +1,12 @@
 .main-container {
-  background-color: #EFEFEF;
+  background-color: #ffd9a7;
   padding-top: 90px;
   min-height: 80vh;
 }
 
 .card {
   height: 175px;
+  width: 320px;
   background-size: cover !important;
   background-position: center;
   color: black;
@@ -13,14 +14,17 @@
   margin: 25px 0;
   margin-top: 15px;
   margin-bottom: 20px;
+  border-radius: 20px;
 }
 
 .card-name {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  font-size: 15px;
+  margin-top: 10px;
+  top: 20px;
+  left: 20%;
+  right: 20%;
+  font-size: 22px;
   text-transform: capitalize;
+  text-align: center;
 }
 
 .card-description {
@@ -29,8 +33,9 @@
   left: 10px;
 }
 .card-description h2 {
-  font-size: 24px;
+  font-size: 18px;
   text-transform: capitalize;
+  font-weight: lighter;
 }
 .card-description p {
   font-size: 14px;
@@ -43,4 +48,5 @@
   margin-top: 20px;
   font-size: 30px;
   text-transform: capitalize;
+  color: #4286ba;
 }
